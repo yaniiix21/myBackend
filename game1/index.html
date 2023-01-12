@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <title>Swerte Game</title>
+
+</head>
+
+<body>
+    <!-- normal -->
+  <header class="d-none d-md-block" id="head">
+    <h1 class="title" id="idtitle">
+      Ari bi, Swerte ba ka?! 👻
+    </h1>
+
+    <p class="between">(Between 0 and 20)</p>
+    <button class="btn again" id="again">
+      Balik!
+    </button>
+    <div class="number" id="sign">?</div>
+  </header>
+
+<!-- mobile -->
+<div class="container-fluid d-block d-md-none">
+    <header class="header" id="headMobile">
+        <h1 class="title fs-4" id="idtitleMobile">
+          Ari bi, Swerte ba ka?! 👻
+        </h1>
+    
+        <p class="between fs-6">(Between 0 and 20)</p>
+        <button class="btn2 again" id="againMobile">
+          Balik!
+        </button>
+        <div class="number2" id="signMobile">?</div>
+      </header>
+</div>
+
+
+<!-- normal -->
+    <div class="d-none d-md-block">
+        <main id="main">
+
+
+            <section class="left" >
+        
+              <input type="number" class="guess" id="user-input" />
+        
+              <button class="btn checkbtn" id="check">
+                Check!
+              </button>
+            </section>
+        
+            <section class="right">
+              <p class="message" id="message">Pag hunahuna na...</p>
+              <p class="label-score">
+                💯 Score:
+                <span class="score" id='score'>20</span>
+              </p>
+              <p class="label-highscore">
+                🥇 Highscore:
+                <span class="highscore" id="highscore">0</span>
+              </p>
+            </section>
+          </main>
+    </div>
+
+<!-- mobile -->
+  <div class="container d-block d-md-none pt-5" id="mainMobile">
+    <div class="row pt-5 ">
+        <!-- <div class="col-3"></div> -->
+        <div class="d-flex justify-content-center col-12">
+            <section class="left d-block d-md-none" id="left">
+
+                <input type="number" class="guess2" id="user-inputMobile" />
+          
+                <button class="btn btn3 checkbtn" id="checkMobile">
+                  Check!
+                </button>
+            </section>
+        </div>
+        <!-- <div class="col-3"></div> -->
+    </div>
+            
+    <div class="row pt-5">
+        <div class="col-12">
+            <section class="right fs-4">
+                <p class="message " id="messageMobile">Pag hunahuna na...</p>
+                <p class="label-score">
+                  💯 Score:
+                  <span class="score" id='scoreMobile'>20</span>
+                </p>
+                <p class="label-highscore">
+                  🥇 Highscore:
+                  <span class="highscore" id="highscoreMobile">0</span>
+                </p>
+              </section>
+        </div>
+    </div>
+</div>
+  <script src="script.js"></script>
+</body>
+
+</html>

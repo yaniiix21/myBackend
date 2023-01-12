@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* #container{
+    height: 100vh;
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+#btn{
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: all 0.5s ease;
+}
+
+#btn:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
